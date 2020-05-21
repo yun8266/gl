@@ -20,7 +20,7 @@ inside each folder and run the executable
 
 <img src="docs/rotating.gif" height="300">
 
-### FPS Style Camera
+### FPV Camera
 
 <img src="docs/camera.gif" height="300" >
 
