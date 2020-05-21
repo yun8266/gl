@@ -221,12 +221,12 @@ int main()
     {
         auto t2 = chrono::system_clock::now();
         delta= 1000/(chrono::duration_cast<chrono::milliseconds>(t2-t).count()+0.0001);
-        if (chrono::duration_cast<chrono::milliseconds>(t2-last_save).count()>time_frame){
-            string filename = "saves/im"+to_string(cnt)+".tga";
-            saveScreenshotToFile(filename,800,600);
-            cnt+=1;
-            last_save = t2;
-        }
+        // if (chrono::duration_cast<chrono::milliseconds>(t2-last_save).count()>time_frame){
+        //     string filename = "saves/im"+to_string(cnt)+".tga";
+        //     saveScreenshotToFile(filename,800,600);
+        //     cnt+=1;
+        //     last_save = t2;
+        // }
 
         glfwPollEvents();
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);

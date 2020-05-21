@@ -270,12 +270,12 @@ int main()
         delta = chrono::duration_cast<chrono::milliseconds>(t2-t).count();
         t=t2;
 
-        if (chrono::duration_cast<chrono::milliseconds>(t2-last_save).count()>time_frame){
-            string filename = "saves/im"+to_string(cnt)+".tga";
-            saveScreenshotToFile(filename,800,600);
-            cnt+=1;
-            last_save = t2;
-        }
+        // if (chrono::duration_cast<chrono::milliseconds>(t2-last_save).count()>time_frame){
+        //     string filename = "saves/im"+to_string(cnt)+".tga";
+        //     saveScreenshotToFile(filename,800,600);
+        //     cnt+=1;
+        //     last_save = t2;
+        // }
         
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
